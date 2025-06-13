@@ -104,7 +104,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Logo */}
             <div className="text-2xl font-condensed font-bold">
-              Yoga con Blanca
+              Yoga con Lorena
             </div>
 
             {/* Privacy Link */}
@@ -135,7 +135,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center mt-8 pt-8 border-t border-white/10">
             <p className="text-yoga-light/50 font-body text-sm">
-              © {new Date().getFullYear()} Yoga con Blanca. Todos los derechos
+              © {new Date().getFullYear()} Yoga con Lorena. Todos los derechos
               reservados.
             </p>
           </div>

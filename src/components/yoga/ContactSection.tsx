@@ -116,10 +116,10 @@ const ContactSection = () => {
               También puedes escribirme directamente a:
             </p>
             <a
-              href="mailto:hola@yogaconblanca.com"
+              href="mailto:hola@yogaconlorena.com"
               className="text-yoga-primary hover:text-yoga-secondary font-condensed text-lg transition-colors duration-200"
             >
-              hola@yogaconblanca.com
+              hola@yogaconlorena.com
             </a>
           </div>
         </div>

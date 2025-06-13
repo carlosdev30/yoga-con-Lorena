@@ -7,12 +7,12 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "Natalia",
-      text: "Nunca había practicado yoga y las clases de Blanca me parecieron muy accesibles. Su forma de explicar es muy clara y me siento cómoda desde el primer día.",
+      text: "Nunca había practicado yoga y las clases de Lorena me parecieron muy accesibles. Su forma de explicar es muy clara y me siento cómoda desde el primer día.",
       role: "Estudiante principiante",
     },
     {
       name: "María José",
-      text: "Después de años con dolor de espalda, las clases personalizadas han sido un antes y un después. Blanca adapta cada sesión a mis necesidades específicas.",
+      text: "Después de años con dolor de espalda, las clases personalizadas han sido un antes y un después. Lorena adapta cada sesión a mis necesidades específicas.",
       role: "Clases particulares",
     },
     {
@@ -22,7 +22,7 @@ const TestimonialsSection = () => {
     },
     {
       name: "Ana",
-      text: "Lo que más me gusta de las clases de Blanca es que no hay presión ni competitividad. Es yoga real, sin postureos, enfocado en el bienestar.",
+      text: "Lo que más me gusta de las clases de Lorena es que no hay presión ni competitividad. Es yoga real, sin postureos, enfocado en el bienestar.",
       role: "Yoga en casa",
     },
   ];

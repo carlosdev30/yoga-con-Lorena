@@ -81,7 +81,7 @@ const HeroSection = () => {
         {/* Logo */}
         <div className="mb-8">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-condensed font-bold text-yoga-dark mb-4">
-            Yoga con Blanca
+            Yoga con Lorena
           </h1>
           <div className="w-24 h-1 bg-yoga-primary mx-auto"></div>
         </div>
