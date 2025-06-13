@@ -75,7 +75,7 @@ const AboutSection = () => {
           {/* About Content */}
           <div className="lg:pl-12">
             <h2 className="text-4xl md:text-5xl font-condensed font-bold text-yoga-dark mb-8">
-              Lorena Apellidoo
+              Lorena Apellido
             </h2>
 
             <div className="space-y-6 text-yoga-dark/80 font-body text-lg leading-relaxed">
