@@ -21,17 +21,35 @@ const ContactSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Contact form submission:", formData);
-    // Reset form
-    setFormData({
-      name: "",
-      lastName: "",
-      email: "",
-      message: "",
-    });
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert("Gracias por contactarme 🙏");
+        setFormData({
+          name: "",
+          lastName: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        alert("Error: " + (result.message || "No se pudo enviar el formulario"));
+      }
+    } catch (error) {
+      console.error("Error al enviar el formulario:", error);
+      alert("Ocurrió un error inesperado.");
+    }
   };
 
   return (
@@ -110,7 +128,6 @@ const ContactSection = () => {
             </div>
           </form>
 
-          {/* Additional Contact Info */}
           <div className="mt-16 text-center">
             <p className="text-yoga-dark/60 font-body mb-4">
               También puedes escribirme directamente a:
