@@ -19,6 +19,7 @@ export default {
     },
     extend: {
       colors: {
+        // Original shadcn colors preserved for components
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -62,6 +63,39 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Yoga website specific colors
+        yoga: {
+          primary: "#a466e2", // Purple accent color
+          secondary: "#ac7bdf", // Lighter purple variant
+          background: "#fafafa", // Light gray background
+          white: "#ffffff", // Pure white
+          section: "#f5f5f5", // Section background
+          dark: "#333333", // Dark gray text/footer
+          text: "#333333", // Main text color
+          light: "#ffffff", // Light text for dark backgrounds
+          border: "rgba(50, 50, 50, 0.05)", // Light border
+        },
+      },
+      fontFamily: {
+        condensed: [
+          "Interstate-Condensed-Regular",
+          "Corbel",
+          "Arial",
+          "Helvetica",
+          "sans-serif",
+        ],
+        body: [
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "sans-serif",
+        ],
+      },
+      spacing: {
+        "70": "70px",
+        "35": "35px",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -85,10 +119,39 @@ export default {
             height: "0",
           },
         },
+        float: {
+          "0%, 100%": {
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            transform: "translateY(-10px)",
+          },
+        },
+        "scroll-indicator": {
+          "0%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+          "50%": {
+            opacity: "0.5",
+            transform: "translateY(10px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        float: "float 3s ease-in-out infinite",
+        "scroll-indicator": "scroll-indicator 2s ease-in-out infinite",
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "hero-pattern":
+          'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23a466e2" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
       },
     },
   },
