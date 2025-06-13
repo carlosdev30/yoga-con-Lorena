@@ -39,7 +39,7 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="text-2xl font-condensed font-bold text-yoga-dark">
-            Yoga con Lorena
+            Yogaa con Lorena
           </div>
 
           {/* Desktop Navigation */}
